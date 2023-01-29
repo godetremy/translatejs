@@ -7,7 +7,7 @@
 ## How to use
 * In your HTML page, add script
 ```html
-<script src="/translate.js" type="text/javascript"></script>
+<script src="https://raw.githubusercontent.com/DJremixOff/translatejs/main/translate.js" type="text/javascript"></script>
 ```
 * Create new JSON file for translation
 ```json
@@ -19,7 +19,7 @@
 ```
 * Add meta property to your HTML page
 ```html
-<meta property="fr-lang" content="/lang/fr.json"/>
+<meta property="fr-lang" content="/fr.json"/>
 ```
 * Change your text in your HTML page
 ```html
@@ -32,7 +32,7 @@
 <html>
 	<head>
 		<title>Translate.js</title>
-		<script src="/translate.js"></script>
+		<script src="https://raw.githubusercontent.com/DJremixOff/translatejs/main/translate.js"></script>
 		<meta property="fr-lang" content="/fr.json"/>
 		<meta property="en-lang" content="/en.json"/>
 	</head>
