@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Translate.js Demo page</title>
+		<script src="/translate.js"></script>
+		<script>
+			function invertLang() {
+				const urlParameters = new URLSearchParams(window.location.search);
+				if (urlParameters.get('lang') == "en") {
+					window.location = window.location.origin + window.location.pathname + '?lang=fr'
+				} else {
+					window.location = window.location.origin + window.location.pathname + '?lang=en'
+				}
+			}
+		</script>
+		<meta property="fr-lang" content="/lang/fr.json"/>
+		<meta property="en-lang" content="/lang/en.json"/>
+	</head>
+	<body>
+		<h1>translate.title</h1>
+		<p>translate.paragraph</p>
+		<button onclick="invertLang()">translate.button</button>
+	</body>
+</html>
