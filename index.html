@@ -1,6 +1,9 @@
 <html>
 	<body style='width: 100%; height: 100%;'>
 		<script src='https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js'></script>
-		<script>document.body.addEventListener('click', function (e) {party.confetti(e);});</script >
+		<script>document.body.addEventListener('click', function (e) {party.confetti(e, {
+  // returns a random number from min to max
+  count: party.variation.range(100, 1000)
+}););});</script >
 	</body>
 </html>
