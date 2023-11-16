@@ -24,17 +24,16 @@
 		<span class="loader"></span>
 		<script>
 			var KEY = 0
-			function destroyIframe() {
-                var iframe = window.frameElement;
-                iframe.parentNode.removeChild(iframe);
-            }
 
             document.body.onkeydown = function(e) {
                 if (e.keyCode == 69) {
                     KEY++;
                     if (KEY == 3) {
                         KEY = 0;
-                        destroyIframe();
+                         setTimeout(() => {
+                            // Supprime l'iframe en utilisant window.self pour référencer l'iframe actuelle
+                            window.self.parent.removeChild(window.self);
+                        }, 100);
                     }
                     setTimeout(() => {
                         KEY = 0;
